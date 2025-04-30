@@ -4,23 +4,48 @@ This is a complete authentication system built with modern frontend and backend 
 
 ---
 
+---
+
 ## 🛠️ Tech Stack
 
 ### Frontend
-- ⚛️ React (with Vite)
-- ⚙️ TypeScript
-- 🌐 TanStack Router
-- 🧩 React Hook Form + Zod (schema validation)
-- 💅 Tailwind CSS
-- 🧱 [shadcn/ui](https://ui.shadcn.com/) (for accessible, prebuilt UI components)
+- ⚛️ React (Vite)
+- ✨ TypeScript
+- 🌐 [TanStack Router](https://tanstack.com/router/latest)
+- ✅ Zod + React Hook Form (form validation)
+- 💨 Tailwind CSS
+- 🧩 [shadcn/ui](https://ui.shadcn.com/) (for elegant UI components)
 
 ### Backend
 - 🚀 Node.js + Express.js
-- 🔐 JSON Web Token (JWT)
-- 🧂 bcrypt (for password hashing)
-- 🗄️ MongoDB + Mongoose
+- 🧂 bcrypt (password hashing)
+- 🔐 JWT (authentication)
+- 🗄️ MongoDB with Mongoose
 
 ---
+
+## 🔐 Features
+
+- 🔒 Signup/Login flow
+- 🔐 JWT token-based authentication
+- 🧠 Zod-powered input validation
+- 💅 Styled using Tailwind + shadcn/ui
+- 🔁 React state & routing managed with TanStack Router
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/your-username/LOGIN_SIGNUP_AUTH.git
+cd LOGIN_SIGNUP_AUTH
+
+PORT=3000
+MONGODB_URI=your_mongodb_uri
+JWT_SECRET=your_jwt_secret_key
+
 
 
 
