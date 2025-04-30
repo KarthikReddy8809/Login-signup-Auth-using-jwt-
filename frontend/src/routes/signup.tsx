@@ -31,7 +31,7 @@ function RouteComponent() {
             }
         })
         const onSubmit=(data:Data)=>{
-          fetch("API_URL/signup",{
+          fetch(`${process.env.API_URL}/signup`,{
             method:"POST",
             headers:{
               "Content-Type":"application/json"
