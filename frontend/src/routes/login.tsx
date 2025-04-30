@@ -77,12 +77,12 @@ function RouteComponent() {
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
         <div className="grid grid-cols-1 gap-2">
         <label>Email</label>
-        <input id="email" type="email" className="border" placeholder="" {...register("email")}/>
+        <input id="email" type="email" className="border rounded-md" placeholder="" {...register("email")}/>
         {errors.email && <span className="text-red-500">{errors.email.message}</span>}
         </div>
         <div className="grid grid-cols-1 gap-2">
         <label>Password</label>
-        <input id="password"className="border" type="password" placeholder="" {...register("password")}/>
+        <input id="password"className="border rounded-md" type="password" placeholder="" {...register("password")}/>
         {errors.password && <span className="text-red-500">{errors.password.message}</span>}
         </div>
         <Button type="submit" className="mt-4 w-full bg-blue-500 text-white hover:bg-blue-600">
@@ -91,7 +91,7 @@ function RouteComponent() {
         </form>
         <div className="flex flex-row justify-evenly mt-10">
         <p >Don't have an account</p>
-        <a href="/signup">Signup</a>
+        <a href="/signup" className='text-blue-500 hover:underline'>Signup</a>
         </div>
     </Card>
     </div>
