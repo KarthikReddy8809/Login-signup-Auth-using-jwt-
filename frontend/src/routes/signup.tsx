@@ -31,7 +31,7 @@ function RouteComponent() {
             }
         })
         const onSubmit=(data:Data)=>{
-          fetch("https://login-signup-auth-using-jwt.onrender.com/signup",{
+          fetch("API_URL/signup",{
             method:"POST",
             headers:{
               "Content-Type":"application/json"
