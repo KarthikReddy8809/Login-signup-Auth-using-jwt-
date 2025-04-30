@@ -41,10 +41,31 @@ This is a complete authentication system built with modern frontend and backend 
 ```bash
 git clone https://github.com/your-username/LOGIN_SIGNUP_AUTH.git
 cd LOGIN_SIGNUP_AUTH
+```
 
+### 1.Setup Backend
+```bash
+cd backend
+npm install
+```
+### 2.Create a .env file
+```bash
 PORT=3000
 MONGODB_URI=your_mongodb_uri
 JWT_SECRET=your_jwt_secret_key
+```
+### 3.Start the backend server
+```bash
+npm run dev
+```
+
+### 1. Setup Frontend
+```bash
+cd ../frontend
+npm install
+npm run dev
+```
+
 
 
 
