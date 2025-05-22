@@ -8,8 +8,6 @@ const UserModel=require("../models/userModel")
 
 userRouter.post("/signup",async(req,res)=>{
     try{
-
-    
     const {name,email,password}=req.body
     const existingUser=await UserModel.find({email})
     if(existingUser.length>0){
@@ -23,9 +21,11 @@ userRouter.post("/signup",async(req,res)=>{
         name,
         email,
         password:hashedPassword
-    })  
+    })
+    const token=jwt.sign({ username:name },JWT_SECRET,{expiresIn:"1h"})
     res.status(200).json({
-        message:"User created successfully"
+        message:"User created successfully",
+        token
     })
 }catch(err){
     res.status(401).json({
